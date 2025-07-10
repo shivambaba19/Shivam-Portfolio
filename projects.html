@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(25, 25, 25, 0.4)),
+        url('https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg') no-repeat center center/cover;;
+    }
+
+    h2.section-title {
+      font-weight: bold;
+      color: rgb(14, 119, 223);
+      text-align: center;
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2.section-title::after {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 3px;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(25, 25, 25, 0.4)),
+        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZYIJ5XyISkMQotzITizZtcFiSKCAVFrT8A&s') no-repeat center center/cover;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      transition: width 0.4s ease;
+    }
+
+    h2.section-title:hover::after {
+      width: 80%;
+    }
+
+    p.section-subtitle {
+      color: rgb(7, 165, 238);
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 50px;
+    }
+
+    .projects-section {
+      padding: 80px 0;
+    }
+
+    .card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(0, 123, 255, 0.2);
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: rgb(33, 37, 41);
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: rgb(90, 90, 90);
+    }
+
+    .btn-outline-dark {
+      border-color: rgb(33, 37, 41);
+      color: rgb(33, 37, 41);
+      border-radius: 50px;
+      padding: 6px 20px;
+      font-size: 0.9rem;
+      transition: 0.3s ease;
+    }
+
+    .btn-outline-dark:hover {
+      background-color: rgb(33, 37, 41);
+      color: rgb(255, 255, 255);
+    }
+
+    footer {
+      background-color: rgb(52, 58, 64);
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 25px 0;
+      font-size: 0.9rem;
+    }
+
+    .project-float {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: floatIn 1s ease forwards;
+    }
+
+    .project-float:nth-child(2) { animation-delay: 0.1s; }
+    .project-float:nth-child(3) { animation-delay: 0.2s; }
+    .project-float:nth-child(4) { animation-delay: 0.3s; }
+
+    @keyframes floatIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .badge-custom {
+      background-color: rgb(220, 230, 240);
+      color: rgb(33, 37, 41);
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      display: inline-block;
+      font-size: 0.85rem;
+    }
+
+    .section-heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: rgb(33, 37, 41);
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    .custom-box {
+      background: rgb(255, 255, 255);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="mentor.html">Mentor</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow-1">
+      <section class="projects-section text-center">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Some beginner to intermediate level projects I have created using HTML, CSS & Bootstrap.</p>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5 mb-4 project-float">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Restaurant Menu Page</h5>
+                  <img src="https://orderable.com/wp-content/uploads/2022/11/orderable-product-labels-1024x788.jpg" alt="Resturant menu" height="50">
+                  <p class="card-text">A responsive menu layout showcasing categories and items with elegant design.</p>
+                  <a href="cookitem.html" target="_main" class="btn btn-outline-dark btn-sm mt-3">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5 mb-4 project-float">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">A Slider Page Design</h5>
+                  <img src="https://www.shutterstock.com/image-vector/banner-website-development-laptop-template-260nw-2187936595.jpg" alt="Slider image" height="50">
+                  <p class="card-text">Multi-page website for a restaurant including contact, menu and image slider.</p>
+                  <a href="slider.html" target="_main" class="btn btn-outline-dark btn-sm mt-3">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5 mb-4 project-float">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img src="https://www.shutterstock.com/image-photo/questionnaire-checkboxes-filling-survey-form-260nw-2155743629.jpg" alt="Resturant" height="50" >
+                  <h5 class="card-title">Admission Form</h5>
+                  <p class="card-text">An Admission form , for any type of use in school, coaching etc.</p>
+                  <a href="admission.html" target="_main" class="btn btn-outline-dark btn-sm mt-3">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5 mb-4 project-float">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Registration Form</h5>
+                  <img src="https://media.istockphoto.com/id/1463013729/photo/online-registration-form-for-modish-form-filling.jpg?s=612x612&w=0&k=20&c=Fnx06haU4IHYLcRpy9Po_TBknvBqVjicGuUWkGu8e6Y=" alt="Registration form" height="50">
+                  <p class="card-text">A Registration form to register yourself.</p>
+                  <a href="regiastration.html" target="_main" class="btn btn-outline-dark btn-sm mt-3">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-box">
+            <h3 class="section-heading">What I Learned</h3>
+            <ul>
+              <li>Working with Bootstrap grid system and responsive layouts</li>
+              <li>Styling cards, forms and navbar components</li>
+              <li>Using LocalStorage for saving data</li>
+              <li>Creating clean UI using only HTML and CSS</li>
+            </ul>
+          </div>
+
+          <div class="custom-box">
+            <h3 class="section-heading">Technologies Used</h3>
+            <span class="badge-custom">HTML</span>
+            <span class="badge-custom">CSS</span>
+            <span class="badge-custom">Bootstrap</span>
+            <span class="badge-custom">Responsive Design</span>
+            <span class="badge-custom">LocalStorage</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+    <div class="container">
+      <p>Made with lots of Hardwork and Practice...💪🏻✨</p>
+      <p>Thankyou!! For your precious time .., we will meet again, open it whenever you want , and I promise to enhance this evrytime.🤝🏻</p>
+      <p>BYE BYE!! TAKE CARE..👋🏻</p>
+    </div>
+  </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

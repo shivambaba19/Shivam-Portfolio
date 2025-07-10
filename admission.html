@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .left {
+      flex: 1;
+      height: 80%;
+      width: 80%;
+      background: url(https://rukminim2.flixcart.com/image/850/1000/xif0q/wall-decoration/q/s/z/wall-decor-cutout-for-kids-admission-open-learning-through-fun-original-imahyzyyrynwhh2s.jpeg?q=90&crop=false)no-repeat center;
+      
+    }
+
+    .right {
+      flex: 1;
+      background: linear-gradient(to bottom, rgb(114, 168, 14), rgb(92, 73, 20));
+      padding: 30px;
+    }
+
+    input[type="text"] {
+      margin-bottom: 15px;
+      width: 60%;
+      padding: 10px;
+      display: block;
+    }
+
+    .checkbox-label {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox-label input {
+      width: auto;
+      margin-right: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="left"></div>
+  <div class="right">
+<center>
+   <h2><p>Admission Form</p></h2>
+   
+  </center>
+
+    <label>Name</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>E-Mail</label>
+    <input type="text" placeholder="Enter your email">
+
+    <label>Mobile No</label>
+    <input type="text" placeholder="Enter your mobile">
+
+    <label>College</label>
+    <input type="text" placeholder="Enter your college">
+
+    <div class="checkbox-label">
+      <input type="checkbox" id="agree">
+      <label for="agree">I agree to all the rules</label>
+    </div>
+
+    <button>Submit</button>
+  </div>
+</body>
+</html>

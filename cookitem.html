@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khub Khao Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fcfcfc;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #00ffaa;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 10px 60px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      margin-left: 20px;
+    }
+    nav a:hover {
+  color: #00ffaa;
+  background-color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+    .tagline {
+      text-align: center;
+      font-size: 24px;
+      margin: 15px 0;
+    }
+
+    .tagline::before {
+      content: "❤️ ";
+    }
+
+    .menu-item {
+      position: relative;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      border: 5px solid white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .menu-desc {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      width: 100%;
+      padding: 10px;
+      font-style: italic;
+    }
+
+    .menu-desc span {
+      font-weight: bold;
+      color: gold;
+    }
+
+    .price {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background-color: #333;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #00ffaa;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>Khub Khao Restaurant</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="tagline">The Taste!</div>
+
+<div class="menu-item">
+    <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg?im=AspectCrop=(16,9);" alt="Chicken Burger">
+    <div class="menu-desc">
+      <span>Chicken Burger</span><br>
+      Juicy grilled chicken patty topped with fresh lettuce, tomatoes, cheese, and our house-made mayo, all inside a toasted sesame bun.
+    </div>
+    <div class="price">$14</div>
+  </div>
+  
+  <div class="menu-item">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/00/dd/00/domino-s-pizza.jpg?w=600&h=-1&s=1" alt="Classic Pepperoni Pizza">
+    <div class="menu-desc">
+      <span>Classic Pepperoni Pizza</span><br>
+      A golden-crust pizza loaded with melted mozzarella, spicy pepperoni slices, tangy tomato sauce, and a sprinkle of Italian herbs.
+    </div>
+    <div class="price">$22</div>
+  </div>
+  
+  <div class="menu-item">
+    <img src="https://media.assettype.com/deccanherald%2F2024-02%2F8dad2cfe-8b94-4a9f-a2eb-0724bd4b3319%2FiStock_1334115358.jpg?w=undefined&auto=format%2Ccompress&fit=max" alt="Veg Manchurian">
+    <div class="menu-desc">
+      <span>Veg Manchurian</span><br>
+      Crispy fried vegetable balls tossed in a savory Indo-Chinese sauce made with garlic, soy sauce, green onions, and bell peppers.
+    </div>
+    <div class="price">$8</div>
+  </div>
+  
+<footer>
+  &copy; 2025 Khub Khao Restaurant. All rights reserved.
+  <br>
+  <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+</footer>
+
+</body>
+</html>

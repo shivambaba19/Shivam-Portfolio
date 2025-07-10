@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+    }
+
+    .skills-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+    }
+
+    .skills-heading {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 900;
+      color: #333;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .skills-heading::after {
+      content: '';
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      margin: 12px auto 0;
+      display: block;
+      border-radius: 3px;
+    }
+
+    .skills-img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    }
+
+    .skill-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .progress {
+      height: 20px;
+      margin-bottom: 25px;
+      background-color: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .progress-bar {
+      font-weight: 500;
+      line-height: 20px;
+      transition: width 1s ease-in-out;
+      border-radius: 20px;
+    }
+
+    footer {
+      background: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 80px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .skills-img {
+        margin-bottom: 30px;
+      }
+
+      .skills-heading {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="mentor.html">Mentor</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="skills-section text-center">
+    <div class="container">
+      <h2 class="skills-heading">My Skills</h2>
+      <div class="row align-items-center mt-5">
+        <div class="col-md-6">
+          <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Skills Image" class="skills-img">
+        </div>
+        <div class="col-md-6 text-start">
+          <div class="skill-title">HTML</div>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width: 80%;">80%</div>
+          </div>
+
+          <div class="skill-title">CSS</div>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 75%;">75%</div>
+          </div>
+
+          <div class="skill-title">Bootstrap</div>
+          <div class="progress">
+            <div class="progress-bar bg-info text-dark" style="width: 65%;">65%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<footer>
+    <div class="container">
+      <p>Made with lots of Hardwork and Practice...💪🏻✨</p>
+      <p>Thankyou!! For your precious time .., we will meet again, open it whenever you want , and I promise to enhance this evrytime.🤝🏻</p>
+      <p>BYE BYE!! TAKE CARE..👋🏻</p>
+    </div>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
